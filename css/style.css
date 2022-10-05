@@ -1,0 +1,293 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* estilos del inicio */
+
+/* estilos del body */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilos del header*/
+
+header{
+    background-color: #D8D8D8;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+header div img{
+    max-width: 70px;
+    max-height: 70px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* estilos del nav */
+
+.color-fondo-nav{
+    background-color: #D8D8D8;
+}
+
+
+/* estilos del main*/
+
+.main-inicio{
+    background-color: #EEEEEE;
+    padding: 1rem;
+}
+
+.section-inicio{
+    background-color: black;
+}
+
+.div-banner{
+    
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.div-banner img{
+    display: flex;
+    max-width: auto;
+    margin: 30px;
+    width: 100%;
+
+}
+
+.main-inicio h1{
+    padding: 30px;
+}
+
+.div__main--imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.div__main--imagenes img{
+    max-width: 350px;
+}
+
+/*estilos del footer*/
+
+footer{
+    background-color: black;
+    color: #D8D8D8;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer h3{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: small;
+}
+
+/* estilos de la pagina nosotros */
+
+/* estilos del body */
+
+.body-nosotros{
+    background-color: lightgray;
+    
+    
+}
+
+
+/* estilos del main */
+
+.main-nosotros{
+    text-align: center;
+    margin: 2rem;
+    
+}
+
+.main-nosotros .video-uno{
+    
+    margin-bottom: 1rem;
+}
+
+
+
+
+    
+.main-nosotros .imagenes-todas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+
+
+
+/* estilos de la pagina contacto */
+
+
+/* estilos del main */
+
+.main-contacto .section-contacto{
+    margin: 3rem;
+    
+} 
+.main-contacto .section-contacto div{
+    margin: 1rem;
+}
+
+.main-contacto .section-contacto span{
+    font-size: large;
+}
+
+.main-contacto .form{
+    margin: 1rem;
+
+}
+
+
+
+
+/* estilos de la pagina productos */
+
+/* estilos del body */
+
+.body-productos{
+    background-color: darkgray;
+}
+
+/* estilos del main */
+
+.main-productos .tarjetas-todas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media screen and (min-width: 720px){
+
+    /*querie del inicio*/
+
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /*querie de nosotros*/
+
+    .main-nosotros{
+        display: grid;
+        grid-template-columns:  2fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "h1 h1 h1"
+        "p video video"
+        "h2 h2 h2";
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main-nosotros h1{
+        grid-area: h1;
+    }
+
+    .main-nosotros p{
+        grid-area: p;
+    }
+
+    .main-nosotros .video-uno{
+        grid-area: video;
+        justify-content: center;
+        
+    }
+
+    .main-nosotros h2{
+        grid-area: h2;
+    }
+    
+    .main-nosotros p{
+        width: auto;
+    }
+    .main-nosotros .imagenes-todas{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    /* querie de contacto */
+
+    .main-contacto .section-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-contacto .form{
+       margin-left: 10rem;
+       margin-right: 10rem;
+    }
+
+
+    
+
+
+}
+   
+    
+
+    
+    
+
+    
+
+   
+
+
+
+
+
